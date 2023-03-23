@@ -1,0 +1,11 @@
+Build app:
+dotnet build
+
+Add package:
+dotnet add package Macro.SpecifiedPackage.Resource
+
+Install new tools:
+dotnet tool install -g {dotnet-aspnet-codegenerator}
+
+Generate api rest controller from scaffolding (-m = model; -dc = data context):
+dotnet aspnet-codegenerator controller -name {CountriesController} -m {Country} -dc {HotelListingDbContext} --relativeFolderPath Controllers -api
