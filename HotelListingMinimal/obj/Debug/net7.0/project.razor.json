@@ -1,6 +1,6 @@
 {
-  "SerializedFilePath": "/home/vinitrech/Projects/aspnet-core-learning/HotelListing/obj/Debug/net7.0/project.razor.json",
-  "FilePath": "/home/vinitrech/Projects/aspnet-core-learning/HotelListing/HotelListing.csproj",
+  "SerializedFilePath": "/home/vinitrech/Projects/aspnet-core-learning/HotelListingMinimal/obj/Debug/net7.0/project.razor.json",
+  "FilePath": "/home/vinitrech/Projects/aspnet-core-learning/HotelListingMinimal/HotelListingMinimal.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "7.0",
@@ -18642,7 +18642,7 @@
     ],
     "CSharpLanguageVersion": 1100
   },
-  "RootNamespace": "HotelListing",
+  "RootNamespace": "HotelListingMinimal",
   "Documents": [],
   "SerializationFormat": "0.3"
 }
