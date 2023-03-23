@@ -1,0 +1,100 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/vinitrech/Projects/aspnet-core-learning/HotelListing/HotelListing.csproj": {}
+  },
+  "projects": {
+    "/home/vinitrech/Projects/aspnet-core-learning/HotelListing/HotelListing.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/vinitrech/Projects/aspnet-core-learning/HotelListing/HotelListing.csproj",
+        "projectName": "HotelListing",
+        "projectPath": "/home/vinitrech/Projects/aspnet-core-learning/HotelListing/HotelListing.csproj",
+        "packagesPath": "/home/vinitrech/.nuget/packages/",
+        "outputPath": "/home/vinitrech/Projects/aspnet-core-learning/HotelListing/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/vinitrech/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[8.0.0-preview.2.23128.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0-preview.2.23128.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0-preview.2.23128.3, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.1-dev-00295, )"
+            },
+            "Serilog.Expressions": {
+              "target": "Package",
+              "version": "[3.4.2-dev-00119, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[5.2.3-dev-00262, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/vinitrech/.dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
