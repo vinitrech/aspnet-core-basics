@@ -2,11 +2,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace HotelListing.Models.Country
 {
-    public class CreateCountryDTO
+    public class CreateCountryDTO : BaseCountryDTO
     {
 
-        [Required]
-        public string Name { get; set; }
-        public string ShortName { get; set; }
     }
 }
