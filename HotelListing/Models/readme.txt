@@ -1,0 +1,1 @@
+a DTO should never have a field that references a model directly.
