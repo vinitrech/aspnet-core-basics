@@ -18,3 +18,8 @@ dotnet ef migrations add AddedIdentityTables
 
 Update database to apply migrations changes
 Update-database
+
+Set secret environment variables
+dotnet user-secrets init
+dotnet user-secrets set "JwtSettings:ApiKey" "sDqMbK5VfLHSDtCEZGkWhzecCaxSiUursZ0BQuQHkopxMuPfO592YZCKSxnMFM71ia99fTWuEfsSSO2eBp"
+then access secret variable with builder.Configuration["JwtSettings:ApiKey"]
