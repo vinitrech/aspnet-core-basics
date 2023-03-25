@@ -33,7 +33,7 @@ namespace HotelListing.Repository
                     return default;
                 }
 
-                bool isValidCredentials = await _userManager.CheckPasswordAsync(_user, loginDto.Password);
+                bool isValidCredentials = await _userManager.CheckPasswordAsync(user, loginDTO.Password);
 
                 if (!isValidCredentials)
                 {
