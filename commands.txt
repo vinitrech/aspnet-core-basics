@@ -9,3 +9,12 @@ dotnet tool install -g {dotnet-aspnet-codegenerator}
 
 Generate api rest controller from scaffolding (-m = model; -dc = data context):
 dotnet aspnet-codegenerator controller -name {CountriesController} -m {Country} -dc {HotelListingDbContext} --relativeFolderPath Controllers -api
+
+Generate api rest controller from scratch:
+dotnet aspnet-codegenerator controller -name {AccountController} --relativeFolderPath Controllers -api
+
+Generate new migration
+dotnet ef migrations add AddedIdentityTables
+
+Update database to apply migrations changes
+Update-database
