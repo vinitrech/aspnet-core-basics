@@ -17,22 +17,22 @@ namespace HotelListing.Repository
         private readonly IMapper _mapper;
         private readonly UserManager<ApiUser> _userManager;
         private readonly IConfiguration _configuration;
+        private readonly ILogger<AuthManager> _logger;
         private ApiUser _user;
 
         private const string _loginProvider = "HotelListingApi";
         private const string _refreshToken = "RefreshToken";
 
-        public AuthManager(IMapper mapper, UserManager<ApiUser> userManager, IConfiguration configuration)
+        public AuthManager(IMapper mapper, UserManager<ApiUser> userManager, IConfiguration configuration, ILogger<AuthManager> logger)
         {
             this._mapper = mapper;
             this._userManager = userManager;
             _configuration = configuration;
+            this._logger = logger;
         }
 
         public async Task<AuthResponseDTO> Login(LoginDTO loginDTO)
         {
-
-
             _user = await _userManager.FindByEmailAsync(loginDTO.Email);
             bool isValidUser = await _userManager.CheckPasswordAsync(_user, loginDTO.Password);
 
