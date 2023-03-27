@@ -13,6 +13,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.AspNetCore.OData;
 using Microsoft.OpenApi.Models;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using HotelListing.HealthChecks;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -120,6 +123,13 @@ builder.Services.AddResponseCaching(options =>
     options.UseCaseSensitivePaths = true;
 });
 
+builder.Services.AddHealthChecks()
+.AddCheck<CustomHealthCheck>("CustomHealthCheck",
+failureStatus: HealthStatus.Degraded,
+tags: new[] { "custom" })
+.AddSqlServer(connectionString, tags: new[] { "database" })
+.AddDbContextCheck<HotelListingDbContext>(tags: new[] { "database" });
+
 builder.Services.AddControllers().AddOData(options =>
 {
     options.Select().Filter().OrderBy();
@@ -134,6 +144,40 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseMiddleware<ExceptionMiddleware>();
+
+app.MapHealthChecks("/customhealthcheck", new HealthCheckOptions // runs only checks with 'custom' tag
+{
+    Predicate = healthcheck => healthcheck.Tags.Contains("custom"),
+    ResultStatusCodes = {
+        [HealthStatus.Healthy] = StatusCodes.Status200OK,
+        [HealthStatus.Degraded] = StatusCodes.Status503ServiceUnavailable,
+        [HealthStatus.Unhealthy] = StatusCodes.Status503ServiceUnavailable
+    },
+    ResponseWriter = CustomHealthCheck.WriteResponse
+});
+
+app.MapHealthChecks("/databasehealthcheck", new HealthCheckOptions // runs only checks with 'database' tag
+{
+    Predicate = healthcheck => healthcheck.Tags.Contains("database"),
+    ResultStatusCodes = {
+        [HealthStatus.Healthy] = StatusCodes.Status200OK,
+        [HealthStatus.Degraded] = StatusCodes.Status503ServiceUnavailable,
+        [HealthStatus.Unhealthy] = StatusCodes.Status503ServiceUnavailable
+    },
+    ResponseWriter = CustomHealthCheck.WriteResponse
+});
+
+app.MapHealthChecks("/healthz", new HealthCheckOptions // runs all checks
+{
+    ResultStatusCodes = {
+        [HealthStatus.Healthy] = StatusCodes.Status200OK,
+        [HealthStatus.Degraded] = StatusCodes.Status503ServiceUnavailable,
+        [HealthStatus.Unhealthy] = StatusCodes.Status503ServiceUnavailable
+    },
+    ResponseWriter = CustomHealthCheck.WriteResponse
+});
+
+app.MapHealthChecks("/health"); // runs all checks
 
 app.UseSerilogRequestLogging();
 
