@@ -30,7 +30,7 @@ namespace HotelListing.Controllers
         [HttpGet("GetAll")]
         public async Task<ActionResult<IEnumerable<HotelDTO>>> GetHotels()
         {
-            var hotels = await _hotelsRepository.GetAllAsync<List<HotelDTO>>();
+            var hotels = await _hotelsRepository.GetAllAsync<HotelDTO>();
             return Ok(hotels);
         }
 
