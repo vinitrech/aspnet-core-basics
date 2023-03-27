@@ -1,0 +1,12 @@
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Data/obj/Debug/net7.0/HotelListing.Data.csproj.AssemblyReference.cache
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Data/obj/Debug/net7.0/HotelListing.Data.GeneratedMSBuildEditorConfig.editorconfig
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Data/obj/Debug/net7.0/HotelListing.Data.AssemblyInfoInputs.cache
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Data/obj/Debug/net7.0/HotelListing.Data.AssemblyInfo.cs
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Data/obj/Debug/net7.0/HotelListing.Data.csproj.CoreCompileInputs.cache
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Data/bin/Debug/net7.0/HotelListing.Data.deps.json
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Data/bin/Debug/net7.0/HotelListing.Data.dll
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Data/bin/Debug/net7.0/HotelListing.Data.pdb
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Data/obj/Debug/net7.0/HotelListing.Data.dll
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Data/obj/Debug/net7.0/refint/HotelListing.Data.dll
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Data/obj/Debug/net7.0/HotelListing.Data.pdb
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Data/obj/Debug/net7.0/ref/HotelListing.Data.dll

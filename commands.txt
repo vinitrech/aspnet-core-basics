@@ -13,6 +13,12 @@ dotnet aspnet-codegenerator controller -name {CountriesController} -m {Country} 
 Generate api rest controller from scratch:
 dotnet aspnet-codegenerator controller -name {AccountController} --relativeFolderPath Controllers -api
 
+Generate new class library project:
+dotnet new classlib --name {MyProject}
+
+Add reference to external library project:
+dotnet add reference ../pathTo/project.csproj
+
 Generate new migration
 dotnet ef migrations add AddedIdentityTables
 

@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using HotelListing.Contracts;
-using HotelListing.Models.Users;
+using HotelListing.Core.Contracts;
+using HotelListing.Core.Models.Users;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

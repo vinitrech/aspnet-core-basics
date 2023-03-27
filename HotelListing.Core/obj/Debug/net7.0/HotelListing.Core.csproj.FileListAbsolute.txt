@@ -1,0 +1,15 @@
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Core/bin/Debug/net7.0/HotelListing.Core.deps.json
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Core/bin/Debug/net7.0/HotelListing.Core.dll
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Core/bin/Debug/net7.0/HotelListing.Core.pdb
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Core/bin/Debug/net7.0/HotelListing.Data.dll
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Core/bin/Debug/net7.0/HotelListing.Data.pdb
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Core/obj/Debug/net7.0/HotelListing.Core.csproj.AssemblyReference.cache
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Core/obj/Debug/net7.0/HotelListing.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Core/obj/Debug/net7.0/HotelListing.Core.AssemblyInfoInputs.cache
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Core/obj/Debug/net7.0/HotelListing.Core.AssemblyInfo.cs
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Core/obj/Debug/net7.0/HotelListing.Core.csproj.CoreCompileInputs.cache
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Core/obj/Debug/net7.0/HotelListing.Core.csproj.CopyComplete
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Core/obj/Debug/net7.0/HotelListing.Core.dll
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Core/obj/Debug/net7.0/refint/HotelListing.Core.dll
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Core/obj/Debug/net7.0/HotelListing.Core.pdb
+/home/vinitrech/Projects/aspnet-core-learning/HotelListing.Core/obj/Debug/net7.0/ref/HotelListing.Core.dll
